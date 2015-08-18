@@ -1,0 +1,9 @@
+<div class="ui <%= page.background || 'teal' %> icon message">
+  <i class="remove icon"></i>
+  <div class="content">
+    <div class="header">
+      No <%= is_current('about') ? 'content' : page.title.toLowerCase() || "content" %> yet :(
+    </div>
+    <p>But don't be sad! Just come back again soon and you may find interesting stuff.</p>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<% if (is_home() || is_page()) { %>
+  <% var description = page.description || config.description %>
+  <header class="<%= page.background %>">
+<% } else if (is_category()) { %>
+  <% var description = site.data.categories[page.category].description %>
+  <header class="<%= site.data.categories[page.category].background %>">
+<% } else if (is_post()) { %>
+  <% var description = page.title %>
+  <header class="<%= site.data.categories[page.categories.first().name].background %>">
+<% } %>
+  <div class="background"></div>
+  <div class="ui container">
+    <%- partial('_partial/nav') %>
+    <div class="jumbotron">
+      <h1 class="ui inverted header">
+        <span class="library"><%= description %></span>
+      </h1>
+    </div>
+  </div>
+</header>

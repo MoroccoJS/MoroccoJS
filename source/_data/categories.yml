@@ -1,0 +1,15 @@
+articles:
+  background: yellow
+  description: General JavaScript articles
+tutorials:
+  background: olive
+  description: Libraries, frameworks, and language tutorials
+news:
+  background: purple
+  description: Latest news from the JavaScript world
+events:
+  background: pink
+  description: JavaScript meetups, conferences, and events
+jobs:
+  background: blue
+  description: Job offers and opportunities

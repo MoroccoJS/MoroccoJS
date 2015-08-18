@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= is_current('index') ? config.title : (page.title || titlecase(page.category)) + ' | ' + config.title %></title>
+    <meta name="description" content="<%= is_category() ? site.data.categories[page.category].description : page.description || config.description %>">
+    <meta name="author" content="<%= page.author ? page.author.name : 'SilverPillar' %>">
+    <%- open_graph({
+      description: is_category() ? site.data.categories[page.category].description : page.description || config.description,
+      image: is_post() ? url_for(page.permalink + 'thumbnail.png') : '/img/logo.png'
+    }) %>
+    <%- favicon_tag('/favicon.ico') %>
+
+    <%- css('components/semantic-ui/dist/semantic.min.css') %>
+    <%- css('css/style.css') %>
+  </head>

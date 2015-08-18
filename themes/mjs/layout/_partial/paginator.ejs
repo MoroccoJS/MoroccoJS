@@ -1,0 +1,20 @@
+<div class="column paginator">
+  <div class="ui pagination menu">
+    <a class="<%= page.current === 1 ? 'disabled ' : '' %>item" href="<%= url_for(page.prev_link) %>">Prev</a>
+    <a class="<%= page.current === 1 ? 'active ' : '' %>item" href="<%= url_for('/') %>"><%= 1 %></a>
+    <% if (page.current - 3 > 1) { %>
+      <a class="disabled item">...</a>
+    <% } %>
+    <% for(var i = page.current - 2; i <= page.current + 2; i++) { %>
+      <% if (i <= 1 || i >= page.total) { %>
+        <% continue; %>
+      <% } %>
+      <a class="<%= page.current === i ? 'active ' : '' %>item" href="<%= url_for('page/' + i) %>"><%= i %></a>
+    <% } %>
+    <% if (page.current + 3 < page.total) { %>
+      <a class="disabled item">...</a>
+    <% } %>
+    <a class="<%= page.current === page.total ? 'active ' : '' %>item" href="<%= url_for('page/' + page.total) %>"><%= page.total %></a>
+    <a class="<%= page.current === page.total ? 'disabled ' : '' %>item" href="<%= url_for(page.next_link) %>">Next</a>
+  </div>
+</div>

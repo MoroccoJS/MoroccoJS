@@ -1,0 +1,12 @@
+<% if (page.posts) { %>
+  <div class="ui one column grid">
+    <% page.posts.sort('-date').each(function(post) { %>
+      <%- partial('_partial/post_card', {post: post}) %>
+    <% }); %>
+  </div>
+  <% if (page.total > 1) { %>
+    <%- partial('_partial/paginator') %>
+  <% } %>
+<% } else { %>
+  <%- partial('_partial/nothing') %>
+<% } %>

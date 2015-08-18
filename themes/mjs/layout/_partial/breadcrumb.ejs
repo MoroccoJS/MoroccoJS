@@ -1,0 +1,20 @@
+<div class="ui large breadcrumb">
+  <% if (path === "index.html") { %>
+    <div class="active section">Home</div>
+  <% } else { %>
+    <a class="section" href="/">Home</a>
+  <% } %>
+
+  <% if (is_page() && path !== "index.html") { %>
+    <i class="right chevron icon divider"></i>
+    <div class="active section"><%= page.title %></div>
+  <% } else if (is_category()) { %>
+    <i class="right chevron icon divider"></i>
+    <div class="active section"><%= titlecase(page.category) %></div>
+  <% } else if (is_post()) { %>
+    <i class="right chevron icon divider"></i>
+    <a class="section" href="../"><%= titlecase(page.categories.first().name) %></a>
+    <i class="right chevron icon divider"></i>
+    <div class="active section"><%= page.title %></div>
+  <% } %>
+</div>

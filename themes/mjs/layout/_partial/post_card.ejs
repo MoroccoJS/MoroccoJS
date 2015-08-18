@@ -1,0 +1,20 @@
+<div class="column">
+  <div class="ui <%= site.data.categories[post.categories.first().name].background %> special fluid card">
+    <a href="<%= post.permalink %>" class="content">
+      <img class="post-img" src="/<%= post.path %>thumbnail.png" alt="" />
+      <div class="header"><%= post.title %></div>
+      <div class="meta">
+        <span class="date"><%- full_date(post.date, 'Do MMMM YYYY') %></span>
+      </div>
+      <div class="description">
+        <%= post.description %>
+      </div>
+    </a>
+    <div class="extra content">
+      <img class="ui avatar image" src="<%- gravatar(post.author.email, 50) %>"> <%= post.author.name %>
+      <span class="right floated">
+        <%= titlecase(post.categories.first().name) %>
+      </span>
+    </div>
+  </div>
+</div>

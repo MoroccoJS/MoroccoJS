@@ -1,0 +1,19 @@
+{
+  "name": "MoroccoJS",
+  "version": "0.0.1",
+  "authors": [
+    "Youssef Kababe <hello@youssefkababe.com>"
+  ],
+  "description": "MJS Hexo Theme",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~2.0.2",
+  }
+}

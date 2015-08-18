@@ -1,0 +1,29 @@
+<%- partial('_partial/head') %>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=529694297184858";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <%- partial('_partial/header') %>
+    <div class="ui main container">
+      <section class="main-section">
+        <div class="section-header">
+          <%- partial('_partial/breadcrumb') %>
+        </div>
+
+        <div class="section-content">
+          <%- body %>
+        </div>
+      </section>
+      <%- partial('_partial/sidebar') %>
+    </div>
+    <%- partial('_partial/footer') %>
+
+    <%- js('components/jquery/dist/jquery.min.js') %>
+    <%- js('components/semantic-ui/dist/semantic.min.js') %>
+  </body>
+</html>
