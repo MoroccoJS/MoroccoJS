@@ -12,7 +12,10 @@
     <div class="item">
       <div class="ui transparent icon input">
         <i class="search icon"></i>
-        <%- search_form() %>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input name="q" results="0" class="search-form-input" placeholder="Search" type="text">
+          <input name="sitesearch" value="https://moroccojs.org" type="hidden">
+        </form>
       </div>
     </div>
     <%- link_to('about', 'About', {class: 'item grey ' + (is_current('about') ? 'active' : '')}) %>
