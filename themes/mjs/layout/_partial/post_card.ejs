@@ -11,7 +11,7 @@
       </div>
     </a>
     <div class="extra content">
-      <img class="ui avatar image" src="<%- gravatar(site.data.authors[post.author].email, 50) %>"> <%- link_to('https://github.com/' + site.data.authors[post.author].github, post.author, {external: true}) %>
+      <img class="ui avatar image" src="<%- gravatar(site.data.authors[post.author].email, 50).replace('http', 'https') %>"> <%- link_to('https://github.com/' + site.data.authors[post.author].github, post.author, {external: true}) %>
       <span class="right floated">
         <%= titlecase(post.categories.first().name) %>
       </span>
