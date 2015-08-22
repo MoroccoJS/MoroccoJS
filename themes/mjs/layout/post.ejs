@@ -1,4 +1,9 @@
 <div class="article-wrapper">
+  <ul class="post-meta">
+    <li><i class="calendar outline icon"></i><%- full_date(page.date, 'Do MMMM YYYY') %></li>
+    <li><img class="ui avatar image" src="<%- gravatar(site.data.authors[page.author].email, 50) %>"> <%- link_to('https://github.com/' + site.data.authors[page.author].github, page.author, {external: true}) %></li>
+  </ul>
+  <div class="ui divider"></div>
   <%- page.content %>
 </div>
 <%- partial('_partial/disqus') %>
