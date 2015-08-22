@@ -1,13 +1,13 @@
 title: Community 101
 description: "Introducing MoroccoJS and contribution guide"
 author: Youssef Kababe
-date: 2015-08-11 23:43:44
+date: 2015-08-22 08:00:00
 category: articles
 ---
 
 If you've been following the evolution of {% link JavaScript https://www.javascript.com/ true %} for the past couple of years, then you surely have noticed how fast it's moving forward and how much stronger it has become. From a simple browser scripting language to manipulate the {% link DOM https://en.wikipedia.org/wiki/Document_Object_Model true "Document Object Model" %}, to a language that can be used to power an entire Web application on both the front-end and the back-end, JavaScript's future really seems promising!
 
-However, because of how easy it may look at first, most of the developers who use JavaScript don't invest time in learning the language, they just go ahead and use it. It's true that you can use JavaScript and any framework or library based on it without having a solid knowledge of the language but, besides never knowing what you're doing, you will barely scratch the surface of what JavaScript can do.
+However, because of how easy it may look at first, most of the developers who use JavaScript don't invest time in learning the language, they just go ahead and use it. It's true that you can use JavaScript and any framework or library based on it without having a solid knowledge of the language, but besides never knowing what you're doing, you will barely scratch the surface of what JavaScript can do.
 
 We started **MoroccoJS** in the hope of building a strong Moroccan community around JavaScript, a community where every member is eager to learn and share his knowledge with the world, and to make people aware of what they're missing. One of the things I noticed about developers from other countries is that they don't only consume what others create, they instead learn, share what they have learned, and also create more amazing stuff on top of that! Isn't that the way how technology advances? Indeed it is, and that's why one of the goals of our community is to change the mentality of the Moroccan developer from a dumb consumer to a smart contributor and producer.
 
@@ -30,7 +30,7 @@ First things first, make sure you have {% link Git https://git-scm.com/ true %} 
 
 Forked the repository? Alright, you now have your own copy of **MoroccoJS** that you can clone to your computer. Please don't forget to link the original repository to your local one as remote, so you can easily keep it up to date when something new was pushed. Again if you don't understand what I'm saying here, please take some time to learn Git!
 
-As I said earlier, this website is built with Hexo, a good static website generator written in JavaScript and runs on {% link NodeJS https://nodejs.org true %}. Luckily, we have a tutorial for you on how to install NodeJS on your computer {% post_link Installing-NodeJS-using-NVM-on-Linux here %}! Then next step after having NodeJS installed is to install Hexo and {% link Bower http://bower.io true %}, we use Bower to manage front-end dependencies. You can do that by typing the following lines, each one at a time, in your terminal:
+As I said earlier, this website is built with Hexo, a good static website generator written in JavaScript and runs on {% link NodeJS https://nodejs.org true %}. Luckily, we have a tutorial for you on how to install NodeJS on your computer {% post_link How-to-install-NodeJS-on-Ubuntu-using-NVM here %}! Then next step after having NodeJS installed is to install Hexo and {% link Bower http://bower.io true %}, we use Bower to manage front-end dependencies. You can do that by typing the following lines, each one at a time, in your terminal:
 
 {% codeblock lang:bash %}
 npm install hexo-cli -g
