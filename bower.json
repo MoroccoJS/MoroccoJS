@@ -15,5 +15,6 @@
   ],
   "dependencies": {
     "semantic-ui": "~2.0.2",
+    "highlightjs": "~8.7.0"
   }
 }
