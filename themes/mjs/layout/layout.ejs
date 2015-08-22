@@ -25,5 +25,13 @@
 
     <%- js('components/jquery/dist/jquery.min.js') %>
     <%- js('components/semantic-ui/dist/semantic.min.js') %>
+    <%- js('components/highlightjs/highlight.pack.min.js') %>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('figure.highlight').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
+    </script>
   </body>
 </html>

@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title><%= is_current('index') ? config.title : (page.title || titlecase(page.category)) + ' | ' + config.title %></title>
-    <meta name="description" content="<%= is_category() ? site.data.categories[page.category].description : page.description || config.description %>">
     <meta name="author" content="<%= page.author ? page.author.name : 'SilverPillar' %>">
     <%- open_graph({
       description: is_category() ? site.data.categories[page.category].description : page.description || config.description,
