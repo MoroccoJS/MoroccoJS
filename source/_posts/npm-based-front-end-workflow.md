@@ -1,5 +1,5 @@
 title: npm based front-end workflow
-date: 2015-09-13 00:27:13
+date: 2015-09-17 13:30:00
 description: A tutorial on how to use npm to easily manage your front-end dependencies and compile your assets
 category: tutorials
 author: Youssef Kababe
