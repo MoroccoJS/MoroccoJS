@@ -4,7 +4,10 @@
       <img class="post-img" src="/<%= post.path %>thumbnail.png" alt="" />
       <div class="header"><%= post.title %></div>
       <div class="meta">
-        <span class="date"><%- full_date(post.date, 'Do MMMM YYYY') %></span>
+        <span class="date">
+          <%- full_date(post.date, 'Do MMMM YYYY') %> -
+          <strong class="disqus-comment-count" data-disqus-url="<%= config.url + url_for(post.path) %>"></strong>
+        </span>
       </div>
       <div class="description">
         <%= post.description %>
