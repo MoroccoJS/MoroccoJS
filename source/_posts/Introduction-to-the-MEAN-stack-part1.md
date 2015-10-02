@@ -1,14 +1,14 @@
-title: Introduction to the MEAN stack (part1)
+title: "Introduction to the MEAN stack - Part 1: MongoDB"
 date: 2015-10-01 13:27:28
-description: It's an introduction to the MEAN stack, for the ones who wants to be fullstack developers, in the first chapter, we will introduce you to the Model part, MongoDB.
+description: An introduction to the MEAN stack for full-stack developers. In this first chapter, we will introduce you to the Model part, MongoDB.
 category: tutorials
 author: Soufiane ELBAZ
 ---
 # Introduction:
 
-As we said in the description in the first time we will start with the Model part and especially with the well known document based database (NoSQL) MongoDB.
+As we said in the description, we will start with the Model part and especially with the well known document based database (NoSQL) MongoDB.
 
-If you are similar with JSON you will rapidly notice the similarity between the two, it's (key : value) based, the values may contain a document, arrays, and arrays of documents the thing that can let you far from complex join relations that are also expensive in what we call performance ...
+If you are familiar with JSON you will rapidly notice the similarity between the two, it's (key : value) based, the values may contain a document, arrays, and arrays of documents the thing that can let you far from complex join relations that are also expensive in what we call performance ...
 
 A MongoDB server can contain multiple databases and each database contains multiple collections that can be in relations (OneToOne, OneToMany, ManyToOne and ManyToMany).
 
@@ -48,14 +48,14 @@ It's kind usefull and contain many features that will help us a lot, like tha ca
 	npm install -g mongoose
 {% endcodeblock %}
 
-We will play around just to get used of it, first we type the following command:
+We will play around just to get used to it, first we type the following command:
 
 {% codeblock lang:bash %}
 	node
 {% endcodeblock %}
 
 Now we will declare a mongoose variable that contains the Mongoose module that also contains all the functions we need .
-#### You should now that nodejs is module loading systems, if you want to add functions or objects to your root module you should add them to module.exports
+#### You should know that nodejs has a module loading systems, if you want to add functions or objects to your root module you should add them to module.exports
 
 #### Types of modules : 
 
@@ -113,7 +113,7 @@ we had a relation user<=>posts we shall not do this, we will store the posts in 
 
 An "_id" will be added automatically as a primary key with unique value, its type is ObjectId a type contained in "mongoose.Schema.Types.ObjectId".
 
-Now that our Schema is all that we have to is to add it to the database.
+Now that our Schema is ready, all that we have to do is to add it to the database.
 
 {% codeblock lang:javascript %}
 	/*in the first parameter we set the name of the document and in the the second one the the Schema we created*/
@@ -223,17 +223,3 @@ That's it for the Model Part :D
 ## See you next time with "ExpressJS" and "NodeJS", until that we wish you all GoodLuck.
 
 ## Special thanks go to Youssef Kababe for his commitments in favor of the Moroccan JS and Ruby community (y).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
